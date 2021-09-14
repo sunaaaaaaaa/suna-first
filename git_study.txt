@@ -29,3 +29,11 @@ git사용
  git reset --hard commit: commit내역을 되돌리고, 파일을 원하는 commit지점으로 롤백
  git revert commit : 지정된 commit으로 인해 발생한 변경을 되돌린다. 새로운 commit을 생성해 기존의 commit내역에 추가
  
+7.원격 리포지토리 추가 및 push/pull하기
+ git remote add origin repository주소
+ git pull --allow-unrelated-histories (tab누르면 자동완성) origin main
+  *원격리포지토리에서 처음 pull할때만
+ git push -u origin main
+     -u : push할 기본 원격저장소와 브랜치를 기억
+          앞으로는 push할때 origin main 필요 없음 (원격저장소와 브랜치 작성할 필요x)
+
