@@ -1,0 +1,21 @@
+git사용
+
+1.계정정보등록
+ git config --global user.name 사용자이름
+ git config --global user.email 사용자이메일
+
+2.git_prac폴더를 git이 관리하는 폴더로 지정
+ git으로 관리할 폴더 이동
+ git init
+
+3.기본으로 생성되는 master브랜치를 mian브랜치로 변경
+ git checkout -b main : main브랜치 생성하고 거기로 이동
+ git branch -M main : 기본브랜치를 main브랜치로 지정
+ git status : 상태확인
+
+4.파일을 생성하고 add,commit하기
+ git add 파일명 : staging area 변경된 파일들을 추가
+ git commit : commit에대한 메세지를 남기기위해 vi에디터 실행
+                 i : 입력모드, esc : 입력모드 빠져나올때, wq : 저장과 종료
+ git commit -m 'mesage' : 
+
